@@ -465,7 +465,7 @@ bash<span class="w"> </span>scripts/run-qwen3-30B-A3B.sh
 <h3>参数简介<a class="headerlink" href="#id3" title="链接到此标题。">#</a></h3>
 <p>这里我们简单介绍一下脚本 <a class="reference external" href="https://github.com/vllm-project/vime/blob/main/scripts/run-qwen3-30B-A3B.sh">run-qwen3-30B-A3B.sh</a> 中与 MoE 相关的部分。</p>
 <ol class="arabic">
-<li><p>为了支持在 8xH800 环境中运行 Qwen3-30B-A3B，我们需要开启 megatron 的 CPU Adam 以节省显存，对应配置为：</p>
+<li><p>为了支持在 8xH100 环境中运行 Qwen3-30B-A3B，我们需要开启 megatron 的 CPU Adam 以节省显存，对应配置为：</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">OPTIMIZER_ARGS</span><span class="o">=(</span>
 <span class="w">   </span>...
 <span class="w">   </span>--optimizer-cpu-offload
